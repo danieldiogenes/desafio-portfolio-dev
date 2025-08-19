@@ -1,0 +1,108 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Trash-*
+
+# =========================================
+# Dependências
+# =========================================
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+*.manifest
+*.spec
+
+# =========================================
+# Logs e temporários
+# =========================================
+logs/
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.pid
+*.seed
+*.pid.lock
+
+# =========================================
+# Testes e Cobertura
+# =========================================
+coverage/
+.nyc_output/
+coverage-final.json
+*.lcov
+*.lcov.info
+
+# =========================================
+# Configurações de IDEs
+# =========================================
+.vscode/
+.history/
+*.code-workspace
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# =========================================
+# Arquivos de build / bundlers
+# =========================================
+dist/
+build/
+out/
+.cache/
+.temp/
+.next/
+.nuxt/
+.svelte-kit/
+storybook-static/
+
+# =========================================
+# Env e Segredos
+# =========================================
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================================
+# Docker
+# =========================================
+docker-compose.override.yml
+.docker/
+
+# =========================================
+# Arquivos de compressão temporários
+# =========================================
+*.gz
+*.zip
+*.tar
+*.rar
+
+# =========================================
+# Arquivos de banco de dados temporários
+# =========================================
+*.sqlite
+*.sqlite3
