@@ -1,0 +1,38 @@
+.services {
+  background-color: var(--gray-600);
+  padding: 5.5rem 0 7.5rem 0;
+
+  & .services-title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+
+    & .subtitle {
+      color: var(--color-red);
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  & .services-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & li {
+      padding: 1.25rem;
+      border: 2px solid var(--gray-500);
+      border-radius: 0.75rem;
+      width: 17.5rem;
+
+      & img {
+        width: 3rem;
+        margin-bottom: 1.25rem;
+      }
+
+      & .title-sm {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
