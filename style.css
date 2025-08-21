@@ -52,9 +52,11 @@ ul {
 }
 .title-md {
   font: var(--title-md);
+  color: var(--gray-100);
 }
 .title-sm {
   font: var(--title-sm);
+  color: var(--gray-100);
 }
 .text-md {
   font: var(--text-md);
@@ -133,6 +135,41 @@ header {
       & img {
         width: 1.5rem;
         height: 1.5rem;
+      }
+    }
+  }
+}
+
+.projects {
+  padding: 4.5rem 0 9rem 0;
+
+  & .projects-title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+
+    & .subtitle {
+      color: var(--color-red);
+      margin-bottom: 0.5rem;
+    }
+  }
+  & .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 330px));
+    gap: 1.5rem;
+    justify-content: center;
+
+    & li {
+      background-color: var(--gray-400);
+      border-radius: 0.75rem;
+      padding: 0.75rem 0.75rem 1.0625rem 0.75rem;
+
+      & img {
+        border-radius: 0.5rem;
+        margin-bottom: 1.25rem;
+      }
+
+      & .title-sm {
+        margin-bottom: 0.5rem;
       }
     }
   }
