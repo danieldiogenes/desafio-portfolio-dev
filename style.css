@@ -34,7 +34,7 @@ h3 {
 body {
   color: var(--gray-200);
   background-color: var(--gray-500);
-  padding: 7.5rem 0 12.5rem 0;
+  padding-top: 7.5rem;
 }
 img {
   max-width: 100%;
@@ -162,6 +162,7 @@ header {
       background-color: var(--gray-400);
       border-radius: 0.75rem;
       padding: 0.75rem 0.75rem 1.0625rem 0.75rem;
+      border: 2px solid var(--gray-400);
 
       & img {
         border-radius: 0.5rem;
@@ -171,6 +172,10 @@ header {
       & .title-sm {
         margin-bottom: 0.5rem;
       }
+    }
+
+    & li:hover {
+      border: 2px solid var(--gray-300);
     }
   }
 }
@@ -209,6 +214,90 @@ header {
 
       & .title-sm {
         margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.contact {
+  background-image: url("/assets/images/Background_Contacts.png");
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0 12.5rem 0;
+
+  & .contact-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    & .subtitle {
+      color: var(--color-purple);
+    }
+  }
+
+  & .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    & .contact-link {
+      width: 25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: var(--gray-200);
+      background-color: var(--gray-400);
+      border-radius: 0.5rem;
+      padding: 1.25rem;
+      border: 2px solid var(--gray-400);
+
+      & .icon {
+        display: inline-block;
+        width: 1.75rem;
+        height: 1.75rem;
+        background-color: currentColor;
+        -webkit-mask: no-repeat center;
+        mask: no-repeat center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+      }
+
+      & .icon-github {
+        -webkit-mask-image: url("/assets/icons/GitHubLogo.svg");
+        mask-image: url("/assets/icons/GitHubLogo.svg");
+      }
+
+      & .icon-linkedin {
+        -webkit-mask-image: url("/assets/icons/LinkedinLogo.svg");
+        mask-image: url("/assets/icons/LinkedinLogo.svg");
+      }
+
+      & .icon-instagram {
+        -webkit-mask-image: url("/assets/icons/InstagramLogo.svg");
+        mask-image: url("/assets/icons/InstagramLogo.svg");
+      }
+
+      & .icon-email {
+        -webkit-mask-image: url("/assets/icons/EmailLogo.svg");
+        mask-image: url("/assets/icons/EmailLogo.svg");
+      }
+
+      & div {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+    }
+    & .contact-link:hover {
+      border: 2px solid var(--color-blue);
+
+      & .icon {
+        background-color: var(--color-blue);
       }
     }
   }
